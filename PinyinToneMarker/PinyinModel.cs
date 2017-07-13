@@ -4,9 +4,6 @@ namespace PinyinToneMarker
 {
     public class Pinyin
     {
-        private char[] contentArray;
-        private string _content;
-        private string fullFormat = null;
         public static string MarkTone(string content, int tone)
         {
             char[] contentArray = content.ToLower().ToCharArray();
