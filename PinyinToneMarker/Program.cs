@@ -15,7 +15,8 @@ namespace PinyinToneMarker
             while (true)
             {
                 Console.Out.Write("> ");
-                string[] items = Console.ReadLine().Split(new char[] { ' '});
+                string[] items = Console.ReadLine()?.Split(new char[] { ' '});
+                if (items == null) return;
                 for(int i = 0; i < items.Length; ++i)
                 {
                     string content = items[i].Trim();
